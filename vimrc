@@ -164,10 +164,10 @@ set ttimeoutlen=50  " Reduce annoying delay for key codes, especially <Esc>..."
 
 set background=dark
 " solarized options
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
-colorscheme solarized
-let g:solarized_termcolors=256
+" let g:solarized_visibility = "high"
+" let g:solarized_contrast = "high"
+"colorscheme solarized
+"let g:solarized_termcolors=256
 
 hi! Visual ctermfg=White ctermbg=125 term=none cterm=none
 
@@ -210,3 +210,4 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " ================ YAML  =================
 autocmd FileType yaml set softtabstop=2|set tabstop=2|set shiftwidth=2|set expandtab
+

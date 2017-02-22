@@ -33,6 +33,11 @@ set mouse=a
 
 set ruler
 
+" Toggle paste
+map <F6> :set invpaste<CR>:set paste?<CR>
+imap <F6> <C-O>:set paste<CR>
+"
+
 " ================ Install plugins ==============
 let s:first_time_launch = 0
 if empty(glob("~/.vim/autoload/plug.vim"))
@@ -93,6 +98,9 @@ Plug 'nvie/vim-flake8'
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 
 Plug 'altercation/vim-colors-solarized'
+
+Plug 'tomasr/molokai'
+  let g:rehash256 = 1
 
 filetype plugin indent on
 
@@ -167,6 +175,7 @@ set background=dark
 " let g:solarized_visibility = "high"
 " let g:solarized_contrast = "high"
 "colorscheme solarized
+colorscheme molokai
 "let g:solarized_termcolors=256
 
 hi! Visual ctermfg=White ctermbg=125 term=none cterm=none

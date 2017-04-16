@@ -97,6 +97,8 @@ Plug 'nvie/vim-flake8'
 
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 
+Plug 'fatih/vim-go'
+
 Plug 'altercation/vim-colors-solarized'
 
 Plug 'tomasr/molokai'

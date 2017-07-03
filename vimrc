@@ -64,6 +64,8 @@ Plug 'thinca/vim-quickrun'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'posva/vim-vue'
 
+" Docker
+Plug 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
 
 " Don't touch sign column
 " let g:gitgutter_override_sign_column_highlight = 0
@@ -111,8 +113,6 @@ call plug#end()
 if s:first_time_launch
   PlugInstall
 endif
-
-
 
 " ================ Turn Off Swap Files ==============
 set noswapfile

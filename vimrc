@@ -67,6 +67,13 @@ Plug 'posva/vim-vue'
 " Docker
 Plug 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
 
+" HashiCorp tools
+Plug 'hashivim/vim-hashicorp-tools'
+  autocmd BufNewFile,BufRead *.hcl set syntax=terraform
+  autocmd BufNewFile,BufRead *.nomad set syntax=terraform
+  autocmd BufNewFile,BufRead *.tf set syntax=terraform
+  autocmd BufNewFile,BufRead Appfile set syntax=terraform
+
 " Don't touch sign column
 " let g:gitgutter_override_sign_column_highlight = 0
 Plug 'airblade/vim-gitgutter' " Show git diff in the gutter

@@ -64,9 +64,6 @@ Plug 'thinca/vim-quickrun'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'posva/vim-vue'
 
-" Docker
-Plug 'moby/moby' , {'rtp': '/contrib/syntax/vim/'}
-
 " HashiCorp tools
 Plug 'hashivim/vim-hashicorp-tools'
   autocmd BufNewFile,BufRead *.hcl set syntax=terraform

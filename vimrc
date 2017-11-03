@@ -57,24 +57,11 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeFind' }
 Plug 'mhinz/vim-hugefile'
   let g:hugefile_trigger_size=2
 
-
-Plug 'rking/ag.vim'
-Plug 'thinca/vim-quickrun'
-
 Plug 'editorconfig/editorconfig-vim'
-Plug 'posva/vim-vue'
-
-" HashiCorp tools
-Plug 'hashivim/vim-hashicorp-tools'
-  autocmd BufNewFile,BufRead *.hcl set syntax=terraform
-  autocmd BufNewFile,BufRead *.nomad set syntax=terraform
-  autocmd BufNewFile,BufRead *.tf set syntax=terraform
-  autocmd BufNewFile,BufRead Appfile set syntax=terraform
 
 " Don't touch sign column
 " let g:gitgutter_override_sign_column_highlight = 0
 Plug 'airblade/vim-gitgutter' " Show git diff in the gutter
-
 
 Plug 'tpope/vim-fugitive'
   nnoremap <silent> <leader>gs :Gstatus<CR>
@@ -87,25 +74,13 @@ Plug 'tpope/vim-fugitive'
   nnoremap <silent> <leader>gr :Gremove<CR>
   set diffopt=vertical " Show always vertical diff
 
-Plug 'tomtom/tcomment_vim'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-
-
 Plug 'scrooloose/syntastic'
   let g:syntastic_mode_map = {'mode': 'active','active_filetypes': ['js', 'py'], 'passive_filetypes': ['html'] }
   let g:syntastic_javascript_checkers = ['eslint']
   let g:syntastic_check_on_open = 0
   let g:syntastic_check_on_wq = 0
 
-
 Plug 'nvie/vim-flake8'
-
-Plug 'mattn/emmet-vim', { 'for': 'html' }
-
-Plug 'fatih/vim-go'
-
-Plug 'altercation/vim-colors-solarized'
 
 Plug 'tomasr/molokai'
   let g:rehash256 = 1

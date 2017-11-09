@@ -80,8 +80,6 @@ Plug 'scrooloose/syntastic'
   let g:syntastic_check_on_open = 0
   let g:syntastic_check_on_wq = 0
 
-Plug 'nvie/vim-flake8'
-
 Plug 'tomasr/molokai'
   let g:rehash256 = 1
 
@@ -178,7 +176,6 @@ nmap <silent> // :nohlsearch<CR>
 
 " ================ Python  =================
 
-autocmd BufWritePost *.py call Flake8()
 autocmd FileType python set softtabstop=4|set tabstop=4|set shiftwidth=4|set expandtab
 
 " If nerd tree is the last window - quit

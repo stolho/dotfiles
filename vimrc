@@ -47,6 +47,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'ctrlpvim/ctrlp.vim'
+
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeFind' }
   " Open the project tree and expose current file in the NerdTree with Ctrl-\
   nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>

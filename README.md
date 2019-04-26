@@ -3,7 +3,9 @@ Various dotfiles:
 * vim
 
 ## vim
-I use vim on Mac OS from brew with python 3 and lua support.
+
+### macOS
+Vim on maOS is installed using brew with python 3 and lua support.
 
 To install vim properly run this:
 

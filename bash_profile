@@ -1,11 +1,11 @@
 ### stolho settings #########################################################
 
-### Set locale to en_US.UTF-8 ###############################################
+# Set locale to en_US.UTF-8 
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-### Virtualenv shell startup configuration ##################################
+# Virtualenv shell startup configuration
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/work
 source /usr/local/bin/virtualenvwrapper.sh

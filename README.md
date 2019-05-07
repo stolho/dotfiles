@@ -1,6 +1,7 @@
 # My dotfiles
 Various dotfiles:
 * bash_profile
+* bashrc
 * tmux_conf
 * vimrc
 

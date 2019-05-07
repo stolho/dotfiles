@@ -14,5 +14,7 @@ set modeline
 
 :set bg=dark
 
+autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab
+
 :nnoremap <F8> :setl noai nocin nosi inde=<CR>
 

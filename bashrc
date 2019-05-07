@@ -8,7 +8,19 @@ export LANG=en_US.UTF-8
 # Virtualenv shell startup configuration
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/work
-source /usr/local/bin/virtualenvwrapper.sh
+
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    # Linux
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    # Mac OSX
+    source /usr/local/bin/virtualenvwrapper.sh
+elif [[ "$OSTYPE" == "cygwin" ]]; then
+    # POSIX compatibility layer and Linux environment emulation for Windows
+elif [[ "$OSTYPE" == "msys" ]]; then
+    # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
+else
+    # Unknown.
+fi
 
 function mkvirtualenv3() {
   mkvirtualenv --python=/usr/bin/python3 $1
@@ -22,7 +34,6 @@ export NVM_DIR="${HOME}/.nvm"
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/work/golang
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

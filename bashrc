@@ -11,13 +11,10 @@ export PROJECT_HOME=$HOME/work
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # Linux
+    source .local/bin/virtualenvwrapper.sh
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
     source /usr/local/bin/virtualenvwrapper.sh
-elif [[ "$OSTYPE" == "cygwin" ]]; then
-    # POSIX compatibility layer and Linux environment emulation for Windows
-elif [[ "$OSTYPE" == "msys" ]]; then
-    # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
 else
     # Unknown.
 fi

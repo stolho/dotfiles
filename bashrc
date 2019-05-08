@@ -16,7 +16,8 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
     source /usr/local/bin/virtualenvwrapper.sh
 else
-    # Unknown.
+    # Unknown
+    echo "Unknown OS type"
 fi
 
 function mkvirtualenv3() {

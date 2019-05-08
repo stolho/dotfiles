@@ -11,7 +11,7 @@ export PROJECT_HOME=$HOME/work
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # Linux
-    source .local/bin/virtualenvwrapper.sh
+    source ~/.local/bin/virtualenvwrapper.sh
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
     source /usr/local/bin/virtualenvwrapper.sh

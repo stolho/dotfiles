@@ -14,19 +14,16 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     source ~/.local/bin/virtualenvwrapper.sh
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
-    source /usr/local/bin/virtualenvwrapper.sh
+    export VIRTUALENVWRAPPER_PYTHON=/opt/homebrew/bin/python3
+    source /opt/homebrew/bin/virtualenvwrapper.sh
 else
     # Unknown
     echo "Unknown OS type"
 fi
 
-function mkvirtualenv3() {
-  mkvirtualenv --python=/usr/bin/python3 $1
-}
-
 # nvm
-export NVM_DIR="${HOME}/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Go
 export GOROOT=/usr/local/go
